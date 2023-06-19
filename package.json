@@ -4,7 +4,8 @@
   "description": "An FCC Backend Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "local": "bash -c 'docker build -t localtest .; docker run -ti -p 5000:5000 localtest'"
   },
   "dependencies": {
     "express": "^4.12.4",
